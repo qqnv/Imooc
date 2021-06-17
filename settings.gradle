@@ -1,0 +1,4 @@
+include ':getdatafromsystemdemo'
+include ':dataresoverdemo'
+include ':dataproviderdemo'
+include ':app'

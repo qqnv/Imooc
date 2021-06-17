@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.imooc.lc.imooc"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:recyclerview-v7:28+'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.koushikdutta.async:androidasync:2.+'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    /*底部导航栏*/
+    implementation 'com.ycl.tabview.library:tabviewlibrary:1.0'
+    /*引导页*/
+    implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
+    /*炫酷布局*/
+    implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
+    /*圆头像*/
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    /*日期*/
+    implementation 'com.android.support:cardview-v7:28.0.2'
+    /*SkidRight图片滚动*/
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation files('libs/Msc.jar')
+    /*Gson*/
+    implementation 'com.google.code.gson:gson:2.2.4'
+}
